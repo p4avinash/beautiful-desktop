@@ -24,7 +24,6 @@ class Clock extends Component {
     var d = new Date();
     var hour = d.getHours();
     var minutes = d.getMinutes();
-    //var seconds = d.getSeconds();
 
     return (
       <div className="clock">
