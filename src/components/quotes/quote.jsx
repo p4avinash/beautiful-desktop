@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./quote.css";
 
 class Quote extends Component {
   constructor() {
@@ -18,12 +19,11 @@ class Quote extends Component {
         this.setState({
           quote: `${response2[index].text} - ${response2[index].author}`,
         });
-        return `${response2[index].text} - ${response2[index].author}`;
       });
 
     return (
       <div>
-        <h5>{this.state.quote}</h5>
+        <h5 className="quote">{this.state.quote}</h5>
       </div>
     );
   }

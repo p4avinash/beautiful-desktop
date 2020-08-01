@@ -4,3 +4,9 @@
   margin-top: 30vh;
   color: white;
 }
+
+.greet-with-name {
+  /* background-color: rgba(0, 0, 0, 0.431); */
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0),
+    0 0 0.2em rgb(0, 0, 0);
+}

@@ -5,6 +5,8 @@ import Quote from "../quotes/quote";
 
 const Greeting = () => {
   var d = new Date();
+  // var second= d.gethour();
+  // var minute = d.getMinutes();
   var hour = d.getHours();
   var greet = "";
   const name = "Avinash";
@@ -12,13 +14,13 @@ const Greeting = () => {
   var counter = 0;
 
   //setting the clock so that it can greet accordingly
-  if (hour < 12 && hour > 4) {
+  if (hour > 4 && hour < 12) {
     greet = "Good Morning";
     counter += 1;
-  } else if (hour > 12 && hour < 17) {
+  } else if (hour >= 12 && hour < 16) {
     greet = "Good Afternoon";
     counter += 1;
-  } else if (hour > 17 && hour < 19) {
+  } else if (hour >= 16 && hour < 20) {
     greet = "Good Evening";
     counter += 1;
   } else {
@@ -27,8 +29,10 @@ const Greeting = () => {
 
   return (
     <div className="greeting">
-      <h1>{`${greet}, ${name}`}</h1>
       <Clock />
+      <h2 className="greet-with-name">{`${greet}, ${name}`}</h2>
+      <br />
+      <br />
       <Quote counter={counter} />
     </div>
   );
