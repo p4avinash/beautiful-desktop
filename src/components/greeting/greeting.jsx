@@ -32,7 +32,6 @@ const Greeting = () => {
       <Clock />
       <h2 className="greet-with-name">{`${greet}, ${name}`}</h2>
       <br />
-      <br />
       <Quote counter={counter} />
     </div>
   );
